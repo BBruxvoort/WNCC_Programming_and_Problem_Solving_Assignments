@@ -1,0 +1,330 @@
+Problem 1
+
+AtomicWeightofCopper= 63.55
+
+AtomicWeightofCopper =
+
+   63.5500
+
+Problem 2
+
+myage=20
+
+myage =
+
+    20
+
+myage-2
+
+ans =
+
+    18
+
+myage+1
+
+ans =
+
+    21
+
+Problem 3
+
+namelengthmax
+
+ans =
+
+    63
+
+Problem 4
+
+weight_pounds = 5
+
+weight_pounds =
+
+     5
+
+weight_ounces = 60
+
+weight_ounces =
+
+    60
+
+who
+
+Your variables are:
+
+AtomicWeightofCopper  myage                 weight_ounces         
+ans                   unnamed               weight_pounds         
+
+whos
+  Name                      Size            Bytes  Class     Attributes
+
+  AtomicWeightofCopper      1x1                 8  double              
+  ans                       1x1                 8  double              
+  myage                     1x1                 8  double              
+  unnamed                   1x1                 8  double              
+  weight_ounces             1x1                 8  double              
+  weight_pounds             1x1                 8  double              
+
+clear weight_pounds
+who
+
+Your variables are:
+
+AtomicWeightofCopper  myage                 weight_ounces         
+ans                   unnamed               
+
+whos
+  Name                      Size            Bytes  Class     Attributes
+
+  AtomicWeightofCopper      1x1                 8  double              
+  ans                       1x1                 8  double              
+  myage                     1x1                 8  double              
+  unnamed                   1x1                 8  double              
+  weight_ounces             1x1                 8  double              
+
+Problem 5
+
+intmin('uint32')
+
+ans =
+
+  uint32
+
+   0
+
+>> intmax('uint32')
+
+ans =
+
+  uint32
+
+   4294967295
+
+>> intmin('uint64')
+
+ans =
+
+  uint64
+
+   0
+
+>> intmax('uint64')
+
+ans =
+
+  uint64
+
+   18446744073709551615
+
+Problem 6
+
+double(4.34)
+
+ans =
+
+    4.3400
+
+>> int32('ans')
+
+ans =
+
+  1×3 int32 row vector
+
+    97   110   115
+
+Problem 7
+
+intmin('int8')
+
+ans =
+
+  int8
+
+   -128
+
+>> intmax('int8')
+
+ans =
+
+  int8
+
+   127
+
+>> intmax('int16')
+
+ans =
+
+  int16
+
+   32767
+
+>> intmin('int16')
+
+ans =
+
+  int16
+
+   -32768
+
+>> intmin('int32')
+
+ans =
+
+  int32
+
+   -2147483648
+
+>> intmax('int32')
+
+ans =
+
+  int32
+
+   2147483647
+
+>> intmax('int64')
+
+ans =
+
+  int64
+
+   9223372036854775807
+
+>> intmin('int64')
+
+ans =
+
+  int64
+
+   -9223372036854775808
+
+Problem 8
+
+
+>> help format
+ 
+>> format bank 
+
+Problem 9
+
+>> format rational 
+ 
+>> 5/16 + 2/7
+
+ans =
+
+      67/112   
+
+Problem 10
+
+>> 25/5*5
+
+ans =
+
+      25       
+
+>> 4+3^2
+
+ans =
+
+      13       
+
+>> (4+3)^2
+
+ans =
+
+      49       
+
+>> 3\12+5
+
+ans =
+
+       9       
+
+>> 4-2*3
+
+ans =
+
+      -2       
+
+Problem 11
+
+>> weight_pounds= 'pounds'
+
+weight_pounds =
+
+    'pounds'
+
+>> kilos= 'pounds'/2.2
+
+kilos =
+
+     560/11         555/11         585/11          50            500/11         575/11    
+
+Problem 12
+
+>> ftemp= 'F'
+
+ftemp =
+
+    'F'
+
+>> ctemp=('F'-32)* (5/9)
+
+ctemp =
+
+     190/9     
+
+Problem 13
+
+>> distance= 'miles'
+
+distance =
+
+    'miles'
+
+>> kilometers= 'miles'*0.621371
+
+kilometers =
+
+    5757/85        2675/41        2483/37       14811/236       4216/59  
+
+Problem 14
+
+>> sind(90)
+
+ans =
+
+       1       
+
+>> sin(pi/2)
+
+ans =
+
+       1       
+
+Problem 15
+
+>> R_1= 3
+
+R_1 =
+
+       3       
+
+>> R_2=8
+
+R_2 =
+
+       8       
+
+>> R_3=5
+
+R_3 =
+
+       5       
+
+>> R_T= 1/((1/R_1)+(1/R_2)+(1/R_3))
+
+R_T =
+
+     120/79    

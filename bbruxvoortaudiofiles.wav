@@ -1,0 +1,14 @@
+
+[f1, fs] = audioread(bobby.wav);
+
+f2 = audioread(myswamp.wav);
+
+f3 = audioread(clean.wav);
+
+f4 = audioread(aquascum.wav);
+
+f5 = audioread(hug.wav);
+
+combined = [f1; f2; f3; f4; f5];
+
+sound(combined, fs)

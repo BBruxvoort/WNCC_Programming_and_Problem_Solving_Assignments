@@ -1,0 +1,155 @@
+Brian Bruxvoort
+Problem Set #6
+
+Problem 24
+>> n = 10
+n =
+
+    10
+
+>> numerator= ones(1,n)
+numerator =
+
+     1     1     1     1     1     1     1     1     1     1
+ 
+>> denomenator = [1:1:n]
+denomenator =
+
+     1     2     3     4     5     6     7     8     9    10
+
+>> ratio = numerator./denomenator
+ratio =
+
+  Columns 1 through 9
+    1.0000    0.5000    0.3333    0.2500    0.2000    0.1667    0.1429    0.1250    0.1111
+  Column 10
+    0.1000
+
+>> format rat, ratio
+ratio =
+
+  Columns 1 through 6
+       1              1/2            1/3            1/4            1/5            1/6     
+  Columns 7 through 10
+       1/7            1/8            1/9            1/10    
+
+>> series=sum(ratio')
+series =
+    2639/901  
+
+Problem 25
+>> n=5
+n =
+     5
+
+>> numerator= ones(1,n)
+numerator =
+
+     1     1     1     1     1
+
+>> base = ones(1,n)+1
+base =
+
+     2     2     2     2     2
+
+>> e=0:(n-1)
+e =
+
+     0     1     2     3     4
+
+>> denomenator= base.^e
+denomenator =
+
+     1     2     4     8    16
+
+>> ratio = numerator./denomenator
+
+ratio =
+
+  Columns 1 through 4
+   1.000000000000000   0.500000000000000   0.250000000000000   0.125000000000000
+  Column 5
+   0.062500000000000
+
+>> series= sum(ratio)
+series =
+
+   1.937500000000000
+
+>> format short, series
+series =
+
+    1.9375
+
+Problem 26
+>> numerator = [3:2:9]
+numerator =
+
+     3     5     7     9
+
+>> denominator= [1:4]
+denominator =
+
+     1     2     3     4
+
+>> ratio= numerator./denominator
+ratio =
+
+    3.0000    2.5000    2.3333    2.2500
+
+>> series = sum(ratio)
+series =
+
+   10.0833
+
+Problem 27
+>> mat = randi([1,9],4,5)
+mat =
+
+     8     6     9     9     4
+     9     1     9     5     9
+     2     3     2     8     8
+     9     5     9     2     9
+
+>> Product= prod(mat)
+Product =
+
+        1296          90        1458         720        2592
+
+>> Product= prod(mat')
+Product =
+
+       15552        3645         768        7290
+This one found the products of the rows but put it in column format, so 
+techincally right, but also wrong.
+
+>> dimension = 2;
+>> Product_Row = prod(mat,dimension)
+Product_Row =
+
+       15552
+        3645
+         768
+        7290
+I found a better way to do it above.
+
+Problem 28
+>> matrix= randi([1,20],1,6)
+matrix =
+
+    14     1    17    19    14    16
+
+>> max(matrix)
+ans =
+
+    19
+
+>> min(matrix)
+ans =
+
+     1
+
+>> cumsum(matrix)
+ans =
+
+    14    15    32    51    65    81
